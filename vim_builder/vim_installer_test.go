@@ -7,8 +7,8 @@ import (
 )
 
 func Test_cmd(t *testing.T) {
-    actual := install()
-    expect := "hogee"
+    actual := vim_install("$HOME")
+    expect := "$HOME"
 
     if reflect.DeepEqual(actual, expect) {
         fmt.Println("Success")

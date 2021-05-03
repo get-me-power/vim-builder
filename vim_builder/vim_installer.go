@@ -1,10 +1,9 @@
 package vim_builder
 
 import (
-	"os/exec"
+// 	"os/exec"
 )
 
-func install() string{
-    cmd, _ := exec.Command("ls", "-la").Output()
-    return string(cmd)
+func vim_install(vimPath string) string{
+    return string(vimPath)
 }
