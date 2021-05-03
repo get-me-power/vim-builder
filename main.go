@@ -7,5 +7,7 @@ import (
 )
 
 func main() {
-    (&cli.App{}).Run(os.Args)
+    (&cli.App{
+        Name: "vim-builder",
+    }).Run(os.Args)
 }
