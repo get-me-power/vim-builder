@@ -1,4 +1,4 @@
-package vim_builder
+package main
 
 type options struct {
 	vimPath     string
