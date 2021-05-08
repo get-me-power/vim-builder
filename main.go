@@ -1,11 +1,12 @@
 package main
 
-
 import (
-    "os"
-    "github.com/urfave/cli/v2"
+	"github.com/urfave/cli/v2"
+	"os"
 )
 
 func main() {
-    (&cli.App{}).Run(os.Args)
+	(&cli.App{
+		Name: "vim-builder",
+	}).Run(os.Args)
 }
