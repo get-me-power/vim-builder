@@ -7,7 +7,7 @@ import (
 	"os/exec"
 )
 
-func vim_install(vimPath string) {
+func Vim_install(vimPath string) {
 	if !cmd_pathCheck("git") || vimpath_exists(vimPath) {
 		return
 	}

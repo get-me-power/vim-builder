@@ -2,9 +2,12 @@ package builder
 
 import (
 	"testing"
+
+	"github.com/kazukazuinaina/vim-builder/installer"
 )
 
 func Test_vim_build(t *testing.T) {
+	installer.Vim_install("$HOME/vim")
 	if !vim_build([]string{"hoge"}, "$HOME/vim") {
 		t.Error("cd失敗")
 		return
