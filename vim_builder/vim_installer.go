@@ -12,7 +12,7 @@ func vim_install(vimPath string) {
 		return
 	}
 
-	err := exec.Command("git", "clone", "https://github.com/vim/vim", vimPath).Run()
+	err := exec.Command("git", "clone", "https://github.com/vim/vi", vimPath).Run()
 	if err != nil {
 		fmt.Println(err)
 	} else {
