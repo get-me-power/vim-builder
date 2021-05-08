@@ -3,7 +3,8 @@ package builder
 import "os/exec"
 
 func vim_build(buildFlags []string, vimPath string) bool {
-	err := exec.Command("cd", vimPath+"src").Run()
+	vimPath += "/src"
+	err := exec.Command("cd", vimPath).Run()
 	if err != nil {
 		return false
 	}
