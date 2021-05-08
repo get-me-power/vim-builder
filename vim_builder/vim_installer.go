@@ -2,8 +2,8 @@ package vim_builder
 
 import (
 	"fmt"
+	"log"
 	"os/exec"
-    "log"
 )
 
 func vim_install(vimPath string) {
@@ -21,7 +21,7 @@ func vim_install(vimPath string) {
 func cmd_pathCheck(cmd string) bool {
 	if _, err := exec.LookPath(cmd); err != nil {
 		log.Print(err)
-        return false
+		return false
 	}
 	return true
 }
