@@ -15,10 +15,10 @@ func Test_vim_build(t *testing.T) {
 	t.Log("Success")
 }
 
-func Test_run_configure(t *testing.T) {
-	if !run_configure([]string{}) {
-		t.Error("make失敗")
-		return
-	}
-	t.Log("Success")
-}
+// func Test_run_configure(t *testing.T) {
+// 	if !run_configure([]string{}) {
+// 		t.Error("make失敗")
+// 		return
+// 	}
+// 	t.Log("Success")
+// }

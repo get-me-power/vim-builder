@@ -10,6 +10,7 @@ func vim_build(buildFlags []string, vimPath string) bool {
 	fmt.Println(vimPath)
 	err := exec.Command("cd", vimPath).Run()
 	if err != nil {
+		fmt.Println(err)
 		return false
 	}
 	return true
