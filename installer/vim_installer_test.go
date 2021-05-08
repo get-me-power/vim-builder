@@ -1,4 +1,4 @@
-package vim_builder
+package installer
 
 import (
 	"os"
