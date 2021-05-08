@@ -13,8 +13,8 @@ func vim_install(vimPath string) {
 	}
 
 	err := exec.Command("git", "clone", "https://github.com/vim/vim", vimPath).Run()
-	if err == nil {
-		fmt.Println("error")
+	if err != nil {
+		fmt.Println(err)
 	} else {
 		fmt.Println("Vim is installed")
 	}
