@@ -1,9 +1,13 @@
 package builder
 
-import "os/exec"
+import (
+	"fmt"
+	"os/exec"
+)
 
 func vim_build(buildFlags []string, vimPath string) bool {
 	vimPath += "/src"
+	fmt.Println(vimPath)
 	err := exec.Command("cd", vimPath).Run()
 	if err != nil {
 		return false
